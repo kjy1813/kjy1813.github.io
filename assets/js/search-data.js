@@ -25,14 +25,14 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "Coursework projects across MCU, NPU, processor design and sensor data analysis. Each card links to its GitHub repository.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-repositories",
           title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          description: "GitHub profile and the repositories behind the projects page.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
@@ -451,51 +451,26 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-tflite-micro-latency-optimization",
+          title: 'TFLite Micro Latency Optimization',
+          description: "Arduino Nano 33 BLE · TensorFlow Lite Micro runtime profiling and fixed-shape kernel optimization — 239.60 ms → 95.17 ms with 100% accuracy, model unchanged.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+              window.location.href = "/projects/1_tflite_micro_latency/";
+            },},{id: "projects-on-device-plant-disease-detection",
+          title: 'On-device Plant Disease Detection',
+          description: "AMB82-mini · camera → 0.4 TOPS NPU inference → LED/Serial. Hand-built TensorFlow CNN deployed as an .nb model; 17 of 20 unseen images classified correctly (85%).",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+              window.location.href = "/projects/2_amb82_plant_disease/";
+            },},{id: "projects-16-bit-processor-in-verilog",
+          title: '16-bit Processor in Verilog',
+          description: "Register file, CLA ALU with F/L/C/N/Z flags, barrel shifter, PSR, PC, instruction register and decoder — verified module by module, then integrated and run on a binary program.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+              window.location.href = "/projects/3_verilog_16bit_processor/";
+            },},{id: "projects-tinyml-wrist-sensor-activity-recognition",
+          title: 'TinyML Wrist-Sensor Activity Recognition',
+          description: "Resource-aware HAR on the HTAD wrist dataset — leave-one-subject-out evaluation, handcrafted vs. tiny deep models, full-int8 TFLite (8,920 B) and a sampling-rate ablation.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/4_tinyml_wrist_har/";
             },},{
         id: 'social-email',
         title: 'email',
