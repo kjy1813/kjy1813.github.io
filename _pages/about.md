@@ -2,33 +2,25 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Embedded / System Software
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I focus on how software actually executes on hardware: MCU and NPU deployment, runtime profiling, RTL-level datapath design, and system-level validation with measured results.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+The [projects](/projects/) page collects four coursework projects, each backed by a public repository:
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+- **TFLite Micro latency optimization** on Arduino Nano 33 BLE. Inference latency of a fixed MNIST model from 239.60 ms to 95.17 ms with the model unchanged and accuracy kept at 30/30.
+- **On-device plant disease detection** on the AMB82-mini NPU. Camera to LED with no server, 17 of 20 unseen images classified correctly.
+- **16-bit processor in Verilog.** Register file, CLA ALU with status flags, shifter, PSR, PC and decoder, verified module by module and then as a whole on a binary program.
+- **TinyML wrist-sensor activity recognition.** Leave-one-subject-out evaluation, handcrafted versus tiny deep models, full-int8 TFLite at 8,920 bytes.
+
+Source code, benchmark methodology, and validation logs live in the repositories linked from each project.
