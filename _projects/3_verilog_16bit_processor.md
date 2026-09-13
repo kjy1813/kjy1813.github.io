@@ -8,7 +8,7 @@ category: hardware
 github: https://github.com/kjy1813/verilog-16bit-processor
 ---
 
-**Course:** Computer Architecture (2025-2) · **Language:** Verilog HDL · **Simulation:** ModelSim
+**Course:** Computer Architecture (2025-2) · **Language:** Verilog HDL · **Simulation:** ModelSim (coursework), re-verified with Icarus Verilog during publication
 
 ```
 IMEM → IR → Decoder ─┬─ Register File (8 × 16-bit, 2 read ports)
@@ -29,4 +29,4 @@ Not any single module. The arithmetic flags, the signed/unsigned interpretation 
 - Module testbenches for the register file, ALU, shifter and fetch/decode stage, checked against hand-computed values.
 - Integrated run of a 21-instruction binary program: register initialization, `LUI`/`ORI` immediate construction, a `CMP` + `JNZ` loop that stores through a pointer register and increments it, `JMP` back — observed in the waveform executing in the decoded order.
 
-Details, the decoded program listing, flag test vectors and simulation scripts are in the repository.
+Details, the decoded program listing, flag test vectors, simulation scripts and the Icarus Verilog rerun logs are in the repository.
