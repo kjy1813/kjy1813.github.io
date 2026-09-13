@@ -10,12 +10,12 @@ github: https://github.com/kjy1813/tflite-micro-latency-optimization
 
 **Course:** Embedded System Design (2026-1) · **Target:** Arduino Nano 33 BLE (nRF52840, Cortex-M4) · **Runtime:** TensorFlow Lite Micro · **Language:** C/C++
 
-| Metric | Baseline | Final |
-|---|---:|---:|
+| Metric                           |  Baseline |        Final |
+| -------------------------------- | --------: | -----------: |
 | Average latency (30-image batch) | 239.60 ms | **95.17 ms** |
-| Accuracy | 30 / 30 | **30 / 30** |
-| Speedup | 1.00x | **2.52x** |
-| Latency reduction | – | **60.28%** |
+| Accuracy                         |   30 / 30 |  **30 / 30** |
+| Speedup                          |     1.00x |    **2.52x** |
+| Latency reduction                |         – |   **60.28%** |
 
 The task was to minimize inference latency of a fixed MNIST `.tflite` model on the board **without touching the model**: no retraining, no pruning, no change to graph, shapes, weights, or quantization parameters. The optimization target was the TFLM runtime execution path itself.
 

@@ -12,12 +12,12 @@ github: https://github.com/kjy1813/tinyml-wrist-har
 
 The question was not "which model is most accurate" but **which model generalizes to a new user and could actually run on a wearable MCU**. Everything is evaluated leave-one-subject-out (LOSO), with macro-F1 as the primary metric.
 
-| Track | Input | Best model | LOSO macro-F1 |
-|---|---|---|---:|
-| A | provided features (audio / accelerometer / fusion) | Fusion + RandomForest | 0.6491 |
-| B0 | raw accelerometer → 25 Hz, 3 s windows → handcrafted statistics | **SVM-RBF** | **0.6634** |
-| B | raw windows (x, y, z, magnitude) → Tiny1D-CNN / DS-1D-CNN / Small-TCN | Tiny1D-CNN | 0.3829 |
-| B-TFLite | Tiny1D-CNN, full-integer int8 | 8,920-byte flatbuffer, ~95k MACs / window | 0.3958 |
+| Track    | Input                                                                 | Best model                                | LOSO macro-F1 |
+| -------- | --------------------------------------------------------------------- | ----------------------------------------- | ------------: |
+| A        | provided features (audio / accelerometer / fusion)                    | Fusion + RandomForest                     |        0.6491 |
+| B0       | raw accelerometer → 25 Hz, 3 s windows → handcrafted statistics       | **SVM-RBF**                               |    **0.6634** |
+| B        | raw windows (x, y, z, magnitude) → Tiny1D-CNN / DS-1D-CNN / Small-TCN | Tiny1D-CNN                                |        0.3829 |
+| B-TFLite | Tiny1D-CNN, full-integer int8                                         | 8,920-byte flatbuffer, ~95k MACs / window |        0.3958 |
 
 ## Findings
 
