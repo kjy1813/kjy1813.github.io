@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Coursework projects across MCU, NPU, processor design and sensor data analysis. Each card links to its GitHub repository.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [embedded, hardware, data]
 horizontal: false
 ---
 

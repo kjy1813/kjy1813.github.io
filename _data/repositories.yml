@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - kjy1813
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - kjy1813/tflite-micro-latency-optimization
+  - kjy1813/amb82-plant-disease-ondevice-ai
+  - kjy1813/verilog-16bit-processor
+  - kjy1813/tinyml-wrist-har
